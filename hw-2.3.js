@@ -35,7 +35,7 @@ let b = '3';
 
 alert(Number(a) + Number(b));
 
-// Задание 5
+// Задание 5  ///
 
 let monthNumber = Number(prompt("Введите месяц года"));
 
