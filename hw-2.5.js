@@ -25,7 +25,7 @@ console.log(evenOrOdd(9));
 console.log(evenOrOdd(10));
 
 // Задание 3
-function Square(num) {
+function square(num) {
     console.log(num * num);
 }
 
@@ -33,9 +33,9 @@ function returnSquare(num) {
     return num * num;
 }
 
-Square(5);
+square(5);
 
-var result = returnSquare(9);
+let result = returnSquare(9);
 console.log(result);
 
 // Задание 4
@@ -66,38 +66,48 @@ function multiplyNumbers(num1, num2) {
 // Задание 6
 function cubeNumber() {
 
-    var userInput = prompt("Введите число:");
-    if (isNaN(userInput)) {
-        return 'Переданный параметр не является числом';
+    let userInput = prompt("Введите число:");
 
-    } else {
-        var number = parseFloat(userInput);
-        var result = Math.pow(number, 3);
-        return number + ' в кубе равняется ' + result;
+    if (userInput === "") {
+        return "Введите значение";
     }
+
+    if (isNaN(userInput)) {
+        return "Переданный параметр не является числом";
+    }
+
+    let number = Number(userInput);
+
+    if (isNaN(number)) {
+        return "Введенное значение не является числом";
+    }
+
+    let result = number ** 3;
+    return number + " в кубе равно " + result;
 }
 
 console.log(cubeNumber(5));
 
 // Задание 7
+
+function getArea() {
+    return Math.PI * this.radius ** 2;
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
 let circle1 = {
     radius: 7,
-    getArea: function () {
-        return Math.PI * this.radius ** 2;
-    },
-    getPerimeter: function () {
-        return 2 * Math.PI * this.radius;
-    }
+    getArea: getArea,
+    getPerimeter: getPerimeter
 }
 
 let circle2 = {
     radius: 13,
-    getArea: function () {
-        return Math.PI * this.radius ** 2;
-    },
-    getPerimeter: function () {
-        return 2 * Math.PI * this.radius;
-    }
+    getArea: getArea,
+    getPerimeter: getPerimeter
 }
 
 console.log(circle1.getArea());
