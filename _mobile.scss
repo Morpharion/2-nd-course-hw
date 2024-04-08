@@ -54,6 +54,10 @@
         justify-content: center;
     }
 
+    .button_main {
+        center
+    }
+
     .footer {
         height: 1220px;
         display: flex;
@@ -67,7 +71,6 @@
         height: 300px;
 
         &-box {
-            width: 375px;
             height: 1220px;
             display: flex;
             flex-direction: column;
@@ -79,7 +82,6 @@
     .soty {
         &_game_box {
             height: 654px;
-            width: 375px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
