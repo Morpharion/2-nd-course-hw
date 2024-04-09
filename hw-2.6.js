@@ -156,3 +156,5 @@ const average = sum / numbers.length;
 
 console.log("Исходный массив:", numbers);
 console.log("Среднее арифметическое:", average);
+
+sumasdasd
