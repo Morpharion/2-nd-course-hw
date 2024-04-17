@@ -8,6 +8,11 @@
     .top {
         padding-top: 239px;
         height: 496px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 32px;
     }
 
     .top_title {
@@ -47,16 +52,9 @@
         text-align: center;
     }
 
-    .button_box {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
+    .button_box {}
 
-    .button_main {
-        center
-    }
+    .button_main {}
 
     .footer {
         height: 1220px;
