@@ -136,11 +136,14 @@
 }
 
 .soty {
+
   &_game_box {
     display: flex;
     align-items: center;
     gap: 135px;
     justify-content: center;
+    padding-top: 234px;
+    padding-bottom: 234px;
   }
 
   &_text_box {
@@ -168,6 +171,12 @@
     height: 333px;
     background-image: url(img/soty_picture.png);
   }
+}
+
+.memorygame_pic {
+  width: 485px;
+  height: 333px;
+  background-image: url(img/memorygame.png);
 }
 
 @import "mobile";
