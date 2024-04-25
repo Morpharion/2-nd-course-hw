@@ -43,16 +43,16 @@ console.log(array);
 
 // Задание 5
 
-const numbers = [1, 1, 1];
+const exFive = [1, 1, 1];
 numbers.push('2', '2', '2');
 
 console.log(numbers);
 
 // Задание 6
 
-const massive = [9, 8, 7, 'a', 6, 5];
+const exSix = [9, 8, 7, 'a', 6, 5];
 
-const newArr = massive.filter((element) => {
+const newArrExSix = exSix.filter((element) => {
     return typeof element === 'number';
 });
 
@@ -60,11 +60,11 @@ console.log(newArr);
 
 // Задание 7
 
-const numbers = [9, 8, 7, 6, 5];
+const exSeven = [9, 8, 7, 6, 5];
 
 const guess = prompt("Угадай число!");
 const guessNumber = Number(guess);
-const guessed = numbers.includes(guessNumber);
+const guessed = exSeven.includes(guessNumber);
 
 if (guessed) {
     alert("Угадал!");
@@ -80,35 +80,35 @@ console.log(reversedletters);
 
 // Задание 9
 
-const massive = [[1, 2, 3], [4, 5, 6]];
-const newMassive = [...massive[0], ...massive[1]];
-console.log(NewMssive);
+const arrExNine = [[1, 2, 3], [4, 5, 6]];
+const newArrExNine = [...arrExNine[0], ...arrExNine[1]];
+console.log(newArrExNine);
 
 // Задание 9. Через flat()
 
-const massive = [[1, 2, 3], [4, 5, 6]];
-const newMassive = massive.flat(1);
-console.log(newMassive);
+const arrExNineFlat = [[1, 2, 3], [4, 5, 6]];
+const arrNewExNineFlat = arrExNineFlat.flat(1);
+console.log(arrNewExNineFlat);
 
 // Задание 10
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arrExTen = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for (let i = 0; i < numbers.length - 1; i++) {
-    console.log(`Сумма ${numbers[i]} и ${numbers[i + 1]} равна ${numbers[i] + numbers[i + 1]}`);
+for (let i = 0; i < arrExTen.length - 1; i++) {
+    console.log(`Сумма ${arrExTen[i]} и ${arrExTen[i + 1]} равна ${arrExTen[i] + arrExTen[i + 1]}`);
 }
 
 // Задание 11
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arrExEleven = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function squareNumbers(arr) {
     const squaredNumbers = arr.map((number) => number * number);
     return squaredNumbers;
 }
 
-const result = squareNumbers(numbers);
-console.log(result);
+const resultExEleven = squareNumbers(numbers);
+console.log(resultExEleven);
 
 // Задание 12
 
@@ -119,45 +119,43 @@ function getWordLengths(arr) {
     return lengths;
 }
 
-const result = getWordLengths(words);
-console.log(result);
+const resultExTwelve = getWordLengths(words);
+console.log(resultExTwelve);
 
 // Задание 13
 
-const numbers = [-1, 2, 3, -4, 5, 6, -7, 8, 9];
+const arrExThirteen = [-1, 2, 3, -4, 5, 6, -7, 8, 9];
 
 function getNegativeNumbers(arr) {
     const negativeNumbers = arr.filter((number) => number < 0);
     return negativeNumbers;
 }
 
-const result = getNegativeNumbers(numbers);
-console.log(result);
+const resultExThirteen = getNegativeNumbers(numbers);
+console.log(resultExThirteen);
 
 // Задание 14
 
-const numbers = [];
+const arrExFourteen = [];
 for (let i = 0; i < 10; i++) {
-    numbers.push(Math.floor(Math.random() * 11));
+    arrExFourteen.push(Math.floor(Math.random() * 11));
 }
 
-const evenNumbers = numbers.filter((number) => number % 2 === 0);
+const evenNumbers = arrExFourteen.filter((number) => number % 2 === 0);
 
-console.log("Исходный массив:", numbers);
+console.log("Исходный массив:", arrExFourteen);
 console.log("Массив четных значений:", evenNumbers);
 
 // Задание 15
 
-const numbers = [];
+const arrExFifteen = [];
 for (let i = 0; i < 6; i++) {
-    numbers.push(Math.floor(Math.random() * 10) + 1);
+    arrExFifteen.push(Math.floor(Math.random() * 10) + 1);
 }
 
-const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+const sum = arrExFifteen.reduce((acc, curr) => acc + curr, 0);
 
-const average = sum / numbers.length;
+const average = sum / arrExFifteen.length;
 
-console.log("Исходный массив:", numbers);
+console.log("Исходный массив:", arrExFifteen);
 console.log("Среднее арифметическое:", average);
-
-asd
