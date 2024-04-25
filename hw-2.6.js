@@ -159,3 +159,5 @@ const average = sum / arrExFifteen.length;
 
 console.log("Исходный массив:", arrExFifteen);
 console.log("Среднее арифметическое:", average);
+
+asdasd

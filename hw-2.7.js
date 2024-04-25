@@ -46,7 +46,7 @@ getRandomNumber();
 // Задание 6
 
 function generateRandomArray(n) {
-    const arrayLength = n / 2;
+    const arrayLength = Math.floor(n / 2);
     const randomNumbers = [];
 
     for (let i = 0; i < arrayLength; i++) {
@@ -67,20 +67,29 @@ function getRandomNumberInRange(min, max) {
 
 // Задание 8
 
-const currentDate = new Date();
+const currentDateExEight = new Date();
 
-const formattedDate = currentDate.toLocaleDateString();
+const formattedDate = currentDateExEight.toLocaleDateString();
 
 console.log(`Текущая дата: ${formattedDate}`);
 
-// Задание 9
+// Задание 9 
 
-const currentDate = new Date();
+function calculateFutureDate(daysToAdd) {
+    const currentDate = new Date();
 
-const currentDay = currentDate.getDate();
-currentDate.setDate(currentDay + 73);
+    const currentDayOfMonth = currentDate.getDate();
 
-console.log("Через 73 дня:", currentDate);
+    const futureDate = new Date(currentDate);
+
+    futureDate.setDate(futureDate.getDate() + daysToAdd);
+
+    const formattedFutureDate = formatDate(futureDate);
+
+    console.log("Через 73 дня:", formattedFutureDate);
+}
+
+calculateFutureDate(73);
 
 // Задание 10 
 
@@ -95,8 +104,9 @@ function formatDate(date) {
         'четверг', 'пятница', 'суббота'
     ];
 
-    const formattedDate = `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} — это ${weekDays[date.getDay()]}`;
-    const formattedTime = `Время: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    const formattedDate = `Дата: ${('0' + date.getDate()).slice(-2)} ${months[date.getMonth()]} ${date.getFullYear()} — это ${weekDays[date.getDay()]}`;
+
+    const formattedTime = `Время: ${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}:${('0' + date.getSeconds()).slice(-2)}`;
 
     return `${formattedDate}\n${formattedTime}`;
 }
