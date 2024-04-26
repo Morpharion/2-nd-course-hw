@@ -44,9 +44,9 @@ console.log(array);
 // Задание 5
 
 const exFive = [1, 1, 1];
-numbers.push('2', '2', '2');
+exFive.push('2', '2', '2');
 
-console.log(numbers);
+console.log(exFive);
 
 // Задание 6
 
