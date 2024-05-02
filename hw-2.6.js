@@ -44,9 +44,9 @@ console.log(array);
 // Задание 5
 
 const exFive = [1, 1, 1];
-numbers.push('2', '2', '2');
+exFive.push('2', '2', '2');
 
-console.log(numbers);
+console.log(exFive);
 
 // Задание 6
 
@@ -56,7 +56,7 @@ const newArrExSix = exSix.filter((element) => {
     return typeof element === 'number';
 });
 
-console.log(newArr);
+console.log(newArrExSix);
 
 // Задание 7
 
@@ -76,7 +76,7 @@ if (guessed) {
 
 const letters = 'abcdef';
 const reversedLetters = letters.split('').reverse().join('');
-console.log(reversedletters);
+console.log(reversedLetters);
 
 // Задание 9
 
@@ -107,7 +107,7 @@ function squareNumbers(arr) {
     return squaredNumbers;
 }
 
-const resultExEleven = squareNumbers(numbers);
+const resultExEleven = squareNumbers(arrExEleven);
 console.log(resultExEleven);
 
 // Задание 12
@@ -131,7 +131,7 @@ function getNegativeNumbers(arr) {
     return negativeNumbers;
 }
 
-const resultExThirteen = getNegativeNumbers(numbers);
+const resultExThirteen = getNegativeNumbers(arrExThirteen);
 console.log(resultExThirteen);
 
 // Задание 14
@@ -159,5 +159,3 @@ const average = sum / arrExFifteen.length;
 
 console.log("Исходный массив:", arrExFifteen);
 console.log("Среднее арифметическое:", average);
-
-asdasd
