@@ -90,4 +90,4 @@ function sayHi(name) {
 
 delayForSecond(() => sayHi('Глеб'));
 
-///asdasd
+///asdasgfsbfdasdc
