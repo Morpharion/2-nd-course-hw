@@ -8,6 +8,11 @@
     .top {
         padding-top: 239px;
         height: 496px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 32px;
     }
 
     .top_title {
@@ -49,10 +54,10 @@
 
     .button_box {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         justify-content: center;
     }
+
+    .button_main {}
 
     .footer {
         height: 1220px;
@@ -67,7 +72,6 @@
         height: 300px;
 
         &-box {
-            width: 375px;
             height: 1220px;
             display: flex;
             flex-direction: column;
@@ -79,12 +83,13 @@
     .soty {
         &_game_box {
             height: 654px;
-            width: 375px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             gap: 64px;
+            padding-top: 136px;
+            padding-bottom: 0;
         }
 
         &_text_box {
@@ -108,5 +113,13 @@
             letter-spacing: 0px;
             text-align: center;
         }
+    }
+
+    .memorygame_pic {
+        width: 344px;
+        height: 236px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
